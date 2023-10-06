@@ -10,7 +10,7 @@ body {
  * Navigation
  */
 nav {
-    background-color: #ebedf0;
+    background-color: #EDEDF0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,4 +50,28 @@ nav ul li a {
     border: 1px solid #A6A7B0;
     color: inherit;
     text-decoration: inherit;
+}
+
+/*
+ * Hero
+ */
+ header {
+    background-image: url(../img/headers/welcome.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 480px;
+}
+
+header h1 {
+    color: #EBEDF0;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    padding: 16px;
+    border-radius: 10px;
 }
