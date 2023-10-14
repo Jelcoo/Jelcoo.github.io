@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Noto%20Sans);
+
 * {
     border: 0;
     margin: 0;
     padding: 0;
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Noto Sans", sans-serif;
 }
 
 body {
@@ -99,9 +101,25 @@ main {
 /*
  * Content
  */
-#homearticle {
+main {
+    padding-left: 20rem;
+    padding-right: 20rem;
     margin-top: 24px;
-    text-align: center;
+    display: grid; /* display as grid */
+    grid: 50% 50%;
+    grid-gap: 50px;
+}
+
+#homearticle {
+    grid-column: span 1 / span 1;
+}
+
+#img_home_random {
+    grid-column: span 1 / span 1;
+}
+
+#img_home_watersport {
+    grid-column: span 2 / span 2;
 }
 
 .articlecontainer {
