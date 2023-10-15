@@ -105,28 +105,43 @@ main {
     padding-left: 20rem;
     padding-right: 20rem;
     margin-top: 24px;
+}
+
+main#home {
     display: grid; /* display as grid */
     grid: 50% 50%;
     grid-gap: 50px;
 }
 
 #homearticle {
-    grid-column: span 1 / span 1;
+    grid-column: span 1 / span 1; /* span 1 column */
 }
 
 #img_home_random {
-    grid-column: span 1 / span 1;
+    grid-column: span 1 / span 1; /* span 1 column */
 }
 
 #img_home_watersport {
-    grid-column: span 2 / span 2;
+    grid-column: span 2 / span 2; /* span 2 columns */
 }
 
 .articlecontainer {
     margin-top: 24px;
-    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+
+article img {
+    margin-top: 16px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.divider-bottom {
+    border-bottom: 1px solid #A6A7B0;
+    padding-bottom: 24px;
 }
 
 #cta-button {
