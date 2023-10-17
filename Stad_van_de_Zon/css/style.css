@@ -32,10 +32,18 @@ main {
 
 #topnav .logo {
     height: auto;
-    width: 200px;
     display: block; /* display as block element, take up width of parent */
     position: absolute; /* position relative to parent */
-    left: 64px;
+
+    @media screen and (max-width: 719px) {
+        width: 100px;
+        left: 32px;
+    }
+
+    @media screen and (min-width: 719px) {
+        width: 200px;
+        left: 64px;
+    }
 }
 
 #topnav .logo > img {
@@ -43,12 +51,36 @@ main {
     height: auto;
 }
 
+#topnav .logo > img#logo_mobile {
+    /* hide image logo on desktop */
+    @media screen and (min-width: 719px) {
+        display: none;
+    }
+}
+
+#topnav .logo > img#logo_pc {
+    /* hide text logo on mobile */
+    @media screen and (max-width: 719px) {
+        display: none;
+    }
+}
+
 #topnav > ul {
-    display: flex; /* display as flexbox */
-    list-style: none; /* remove bullet points */
-    justify-content: center; /* align horizontal */
-    align-items: center; /* align vertical */
-    gap: 32px; /* space between elements */
+    /* mobile navbar */
+    @media screen and (max-width: 719px) {
+        display: grid;
+        grid: 50% 50%;
+        list-style: none; /* remove bullet points */
+    }
+    
+    /* pc navbar */
+    @media screen and (min-width: 719px) {
+        display: flex; /* display as flexbox */
+        list-style: none; /* remove bullet points */
+        justify-content: center; /* align horizontal */
+        align-items: center; /* align vertical */
+        gap: 32px; /* space between elements */
+    }
 }
 
 #topnav > ul > li > a {
@@ -150,6 +182,7 @@ article img {
     border-radius: 10px;
     background-color: #FFAC00;
     padding: 10px;
+    font-size: 20px;
     text-decoration: none; /* remove underline */
 }
 
