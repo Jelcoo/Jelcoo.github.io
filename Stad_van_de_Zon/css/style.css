@@ -134,15 +134,35 @@ main {
  * Content
  */
 main {
-    padding-left: 20rem;
-    padding-right: 20rem;
     margin-top: 24px;
+
+    @media screen and (max-width: 719px) {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    
+    @media screen and (min-width: 719px) {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
 }
 
 main#home {
-    display: grid; /* display as grid */
-    grid: 50% 50%;
-    grid-gap: 50px;
+    @media screen and (max-width: 719px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 719px) {
+        display: grid; /* display as grid */
+        grid: 50% 50%;
+        grid-gap: 50px;
+    }
+}
+
+main#home img {
+    width: 100%;
+    height: auto;
+    margin-top: 16px;
 }
 
 #homearticle {
@@ -161,10 +181,6 @@ main#home {
     margin-top: 24px;
     margin-left: auto;
     margin-right: auto;
-}
-
-article img {
-    margin-top: 16px;
 }
 
 .full-width {
