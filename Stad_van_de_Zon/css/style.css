@@ -66,13 +66,8 @@ main {
 }
 
 #topnav > ul {
-    /* mobile navbar */
-    @media screen and (max-width: 719px) {
-        display: grid;
-        grid: 50% 50%;
-        list-style: none; /* remove bullet points */
-    }
-    
+    display: none;
+
     /* pc navbar */
     @media screen and (min-width: 719px) {
         display: flex; /* display as flexbox */
@@ -80,6 +75,18 @@ main {
         justify-content: center; /* align horizontal */
         align-items: center; /* align vertical */
         gap: 32px; /* space between elements */
+    }
+}
+
+#menu-toggle {
+    @media screen and (min-width: 719px) {
+        display: none;
+    }
+}
+
+#menu-toggle:checked ~ .menu {
+    @media screen and (max-width: 719px) {
+        display: block;
     }
 }
 
