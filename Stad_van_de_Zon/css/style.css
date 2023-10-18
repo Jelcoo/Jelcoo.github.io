@@ -242,6 +242,10 @@ main img {
     text-decoration: none; /* remove underline */
 }
 
+#cta-button:hover {
+    background-color: #FFC94D;
+}
+
 /*
  * Footer
  */
