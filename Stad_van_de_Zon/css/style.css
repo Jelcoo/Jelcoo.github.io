@@ -101,7 +101,7 @@ main {
     border: 2px solid #0800A7;
 }
 
-#topnav > ul > li > a:not(.active):not(.contact):hover {
+#topnav > ul > li > a:not(.active, .contact):hover {
     background-color: transparent;
     border: 2px solid #FFAC00;
 }
