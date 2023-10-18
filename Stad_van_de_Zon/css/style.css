@@ -101,6 +101,20 @@ main {
     border: 2px solid #0800A7;
 }
 
+#topnav > ul > li > a:not(.active):not(.contact):hover {
+    background-color: transparent;
+    border: 2px solid #FFAC00;
+}
+
+#topnav > ul > li > a.contact {
+    background-color: #FFAC00;
+    border: 0;
+}
+
+#topnav > ul > li > a.contact:hover {
+    background-color: #FFC94D;
+}
+
 /*
  * Hero
  */
