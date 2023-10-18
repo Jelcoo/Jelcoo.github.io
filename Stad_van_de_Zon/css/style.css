@@ -66,27 +66,22 @@ main {
 }
 
 #topnav > ul {
-    display: none;
+    display: flex; /* display as flexbox */
+    list-style: none; /* remove bullet points */
+    justify-content: center; /* align horizontal */
+
+    /* mobile navbar */
+    @media screen and (max-width: 719px) {
+        flex-wrap: wrap;
+        margin-left: 150px;
+        row-gap: 24px;
+        column-gap: 10px;
+    }
 
     /* pc navbar */
     @media screen and (min-width: 719px) {
-        display: flex; /* display as flexbox */
-        list-style: none; /* remove bullet points */
-        justify-content: center; /* align horizontal */
         align-items: center; /* align vertical */
         gap: 32px; /* space between elements */
-    }
-}
-
-#menu-toggle {
-    @media screen and (min-width: 719px) {
-        display: none;
-    }
-}
-
-#menu-toggle:checked ~ .menu {
-    @media screen and (max-width: 719px) {
-        display: block;
     }
 }
 
