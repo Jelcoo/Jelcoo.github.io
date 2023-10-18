@@ -122,6 +122,18 @@ main {
     background-image: url(../img/headers/recreatie.png); /* set background image */
 }
 
+.hero.voorzieningen {
+    background-image: url(../img/headers/voorzieningen.png); /* set background image */
+}
+
+.hero.wonen {
+    background-image: url(../img/headers/wonen.png); /* set background image */
+}
+
+.hero.zon_wind {
+    background-image: url(../img/headers/zon_wind.png); /* set background image */
+}
+
 .hero > h1 {
     color: #EBEDF0;
     background-color: rgb(0, 0, 0, 0.5); /* black background with 50% opacity */ 
@@ -190,6 +202,15 @@ main img {
 
 .full-width {
     width: 100%;
+}
+
+.half-width {
+    width: calc(50% - 12px); /* 50% of view minus 12px */
+}
+
+.double-image-view {
+    display: flex;
+    gap: 24px;
 }
 
 .divider-bottom {
