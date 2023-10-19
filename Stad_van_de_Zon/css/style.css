@@ -41,14 +41,15 @@ main {
 #topnav .logo {
     height: auto;
     display: block; /* display as block element, take up width of parent */
-    position: absolute; /* position relative to parent */
 
     @media screen and (max-width: 719px) {
+        position: absolute;
         width: 100px;
         left: 32px;
     }
 
     @media screen and (min-width: 719px) {
+        position: fixed;
         width: 200px;
         left: 64px;
     }
@@ -305,6 +306,42 @@ main img {
 figcaption {
     font-size: 14px;
     color: #A6A7B0;
+}
+
+p::first-letter {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+main a {
+    color: #00f;
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: #0800A7;
+}
+
+main a:active {
+    color: #5e5aa5;
+}
+
+#wijkcentrum table {
+    margin-top: 24px;
+    width: 100%;
+    background-color: #fff;
+    border-color: #A6A7B0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+#wijkcentrum table tr:nth-child(even) {
+    background-color: #CFF;
+}
+
+#wijkcentrum table tr td {
+    padding: 8px;
 }
 
 /*
