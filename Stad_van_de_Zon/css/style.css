@@ -212,6 +212,13 @@ main img {
     grid-column: span 1 / span 1; /* span 1 column */
 }
 
+#homearticle p {
+    line-height: 150%;
+    text-indent: -10px;
+    word-spacing: 3px;
+    letter-spacing: -1px;
+}
+
 #recreatie {
     display: grid;
 
@@ -257,7 +264,7 @@ main img {
 }
 
 .articlecontainer {
-    margin-top: 24px;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -267,12 +274,12 @@ main img {
 }
 
 .half-width {
-    width: calc(50% - 12px); /* 50% of view minus 12px */
+    width: calc(50% - 0.5rem); /* 50% of view minus 12px */
 }
 
 .double-image-view {
     display: flex;
-    gap: 24px;
+    gap: 1rem;
 }
 
 .divider-bottom {
@@ -288,6 +295,7 @@ main img {
     padding: 10px;
     font-size: 20px;
     text-decoration: none; /* remove underline */
+    text-transform: uppercase;
 }
 
 #cta-button:hover {
