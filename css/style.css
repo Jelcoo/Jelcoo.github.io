@@ -1,0 +1,439 @@
+@import url(https://fonts.googleapis.com/css?family=Noto%20Sans);
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+}
+
+body {
+    /* Make footer stay at bottom */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    /* Make footer stay at bottom */
+    margin-bottom: auto;
+}
+
+/*
+ * Navigation
+ */
+#topnav {
+    background-color: #EDEDF0;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+@media screen and (max-width: 768px) {
+    #topnav {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #topnav {
+        height: 120px;
+    }
+}
+
+#topnav .logo {
+    height: auto;
+    display: block; /* display as block element, take up width of parent */
+}
+
+@media screen and (max-width: 768px) {
+    #topnav .logo {
+        position: absolute;
+        width: 100px;
+        left: 32px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #topnav .logo {
+        position: fixed;
+        width: 200px;
+        left: 64px;
+    }
+}
+
+#topnav .logo > img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* hide image logo on desktop */
+@media screen and (min-width: 768px) {
+    #topnav .logo > img#logo_mobile {
+        display: none;
+    }
+}
+
+/* hide text logo on mobile */
+@media screen and (max-width: 768px) {
+    #topnav .logo > img#logo_pc {
+        display: none;
+    }
+}
+
+#topnav > ul {
+    display: flex; /* display as flexbox */
+    list-style: none; /* remove bullet points */
+    justify-content: center; /* align horizontal */
+}
+
+/* mobile navbar */
+@media screen and (max-width: 768px) {
+    #topnav > ul {
+        flex-wrap: wrap;
+        margin-left: 125px;
+        row-gap: 24px;
+        column-gap: 10px;
+    }
+}
+
+/* pc navbar */
+@media screen and (min-width: 768px) {
+    #topnav > ul {
+        align-items: center; /* align vertical */
+        gap: 32px; /* space between elements */
+    }
+}
+
+#topnav > ul > li > a {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    border: 1px solid #A6A7B0;
+    color: inherit; /* inherit color from parent */
+    text-decoration: inherit; /* inherit text-decoration from parent */
+}
+
+#topnav > ul > li > a.active {
+    background-color: #D8DADF;
+    border: 2px solid #0800A7;
+}
+
+#topnav > ul > li > a:not(.active, .contact):hover {
+    background-color: transparent;
+    border: 2px solid #FFAC00;
+}
+
+#topnav > ul > li > a.contact {
+    background-color: #FFAC00;
+    border: 0;
+}
+
+#topnav > ul > li > a.contact.active {
+    border: 2px solid #0800A7;
+}
+
+#topnav > ul > li > a.contact:hover {
+    background-color: #FFC94D;
+}
+
+/*
+ * Hero
+ */
+.hero {
+    background-position: center; /* center background image */
+    background-size: cover; /* cover entire element */
+    display: flex; /* display as flexbox */
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    width: 100%;
+    height: 480px;
+}
+
+.hero.home {
+    background-image: url(../img/headers/welcome.png); /* set background image */
+}
+
+.hero.recreatie {
+    background-image: url(../img/headers/recreatie.png); /* set background image */
+}
+
+.hero.voorzieningen {
+    background-image: url(../img/headers/voorzieningen.png); /* set background image */
+}
+
+.hero.wonen {
+    background-image: url(../img/headers/wonen.png); /* set background image */
+}
+
+.hero.zon_wind {
+    background-image: url(../img/headers/zon_wind.png); /* set background image */
+}
+
+.hero > h1 {
+    color: #EBEDF0;
+    background-color: rgb(0, 0, 0, 0.5); /* black background with 50% opacity */ 
+    font-weight: 700; /* bold */
+    font-size: 48px;
+    text-align: center; /* center text */
+    padding: 16px;
+    border-radius: 10px;
+}
+
+/*
+ * Content
+ */
+main {
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main#home {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main#home {
+        display: grid; /* display as grid */
+        grid-template-columns: 50% 50%;
+        grid-gap: 50px;
+    }
+}
+
+main#home img {
+    width: 100%;
+    height: auto;
+}
+
+main img {
+    margin-top: 16px;
+}
+
+#homearticle {
+    grid-column: span 1 / span 1; /* span 1 column */
+}
+
+#homearticle p {
+    line-height: 150%;
+    text-indent: -10px;
+    word-spacing: 3px;
+    letter-spacing: -1px;
+}
+
+#recreatie {
+    display: grid;
+}
+
+@media screen and (max-width: 768px) {
+    #recreatie {
+        grid-template-areas:
+            "voetbal"
+            "sportlagune"
+            "fg_live"
+            "skeef";
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #recreatie {
+        grid-template-areas:
+            "skeef"
+            "fg_live"
+            "sportlagune"
+            "voetbal";
+    }
+}
+
+#skeef {
+    grid-area: skeef;
+}
+
+#fg_live {
+    grid-area: fg_live;
+}
+
+#sportlagune {
+    grid-area: sportlagune;
+}
+
+#voetbal {
+    grid-area: voetbal;
+}
+
+#img_home_random {
+    grid-column: span 1 / span 1; /* span 1 column */
+}
+
+#img_home_watersport {
+    grid-column: span 2 / span 2; /* span 2 columns */
+}
+
+.articlecontainer {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.half-width {
+    width: calc(50% - 0.5rem); /* 50% of view minus 12px */
+}
+
+.double-image-view {
+    display: flex;
+    gap: 1rem;
+}
+
+.divider-bottom {
+    border-bottom: 1px solid #A6A7B0;
+    padding-bottom: 24px;
+}
+
+#cta-button {
+    display: inline-block; /* format as inline element but with heigh and width changes */
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #FFAC00;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none; /* remove underline */
+    text-transform: uppercase;
+}
+
+#cta-button:hover {
+    background-color: #FFC94D;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #A6A7B0;
+}
+
+p::first-letter {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+main a {
+    color: #00f;
+    text-decoration: underline;
+}
+
+main a:hover {
+    color: #0800A7;
+}
+
+main a:active {
+    color: #5e5aa5;
+}
+
+#wijkcentrum table {
+    margin-top: 24px;
+    width: 100%;
+    background-color: #fff;
+    border-color: #A6A7B0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+#wijkcentrum table tr:nth-child(even) {
+    background-color: #CFF;
+}
+
+#wijkcentrum table tr td {
+    padding: 8px;
+}
+
+/*
+ * Form
+ */
+#contact > form {
+    background-color: #F9F9F9;
+    border: 1px solid #A6A7B0;
+    border-radius: 10px;
+    padding: 30px;
+    padding-bottom: 50px;
+}
+
+#contact > form input[type=text],
+#contact > form input[type=email],
+#contact > form input[type=tel],
+#contact > form textarea {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact > form label:not(label[for*=aanhef_radio]), legend {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+label[for*=aanhef_radio] {
+    display: block;
+}
+
+#contact > form > textarea {
+    resize: vertical;
+}
+
+#contact > form > input[type=submit] {
+    float: right;
+    background-color: #FFAC00;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.required {
+    color: #f00;
+}
+
+.cookies {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 9999;
+}
+
+/*
+ * Footer
+ */
+#bottomfooter {
+    text-align: center;
+    color: #A6A7B0;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+}

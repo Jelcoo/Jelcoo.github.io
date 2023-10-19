@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <title>Contact - Stad van de Zon</title>
+
+        <meta charset="UTF-8" />
+        <meta name="author" content="Jelco van 't Hull">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+
+    <body>
+        <nav id="topnav">
+            <a class="logo" href="index.html">
+                <img id="logo_pc" src="img/logo_text.png" title="PC Logo" alt="Stad van de Zon logo voor PC" />
+                <img id="logo_mobile" src="img/logo.png" title="Mobile Logo" alt="Stad van de Zon logo voor mobiel" />
+            </a>
+            <ul>
+                <li>
+                    <a href="recreatie.html">
+                        Recreatie
+                    </a>
+                </li>
+                <li>
+                    <a href="voorzieningen.html">
+                        Voorzieningen
+                    </a>
+                </li>
+                <li>
+                    <a href="wonen.html">
+                        Wonen
+                    </a>
+                </li>
+                <li>
+                    <a href="zon_wind.html">
+                        Zon & Wind
+                    </a>
+                </li>
+                <li>
+                    <a class="contact active" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <main id="contact">
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Aanhef <span class="required">*</span></legend>
+                    <label for="aanhef_radio_dhr">
+                        <input type="radio" id="aanhef_radio_dhr" name="aanhef" value="dhr" checked />
+                        De heer
+                    </label>
+                    <label for="aanhef_radio_mvr">
+                        <input type="radio" id="aanhef_radio_mvr" name="aanhef" value="mvr" />
+                        Mevrouw
+                    </label>
+                    <label for="aanhef_radio_anders">
+                        <input type="radio" id="aanhef_radio_anders" name="aanhef" value="anders" />
+                        Anders
+                    </label>
+                </fieldset>
+
+                <label for="naam">Naam <span class="required">*</span></label>
+                <input type="text" id="naam" name="naam" placeholder="John Doe" required />
+
+                <label for="email">E-mailadres <span class="required">*</span></label>
+                <input type="email" value="email" id="email" name="email" required />
+
+                <label for="telefoonnummer">Telefoonnummer</label>
+                <input type="tel" id="telefoonnummer" name="telefoonnummer" />
+
+                <label for="bericht">Bericht <span class="required">*</span></label>
+                <textarea id="bericht" name="bericht" placeholder="Schrijf hier uw bericht" rows="5"></textarea>
+
+                <input type="submit" value="submit" />
+
+                <span class="required">
+                    <em>* is required</em>
+                </span>
+            </form>
+        </main>
+        <aside class="cookies">
+            This websites uses cookies.
+        </aside>
+        <footer id="bottomfooter">
+            Copyright &COPY; Jelco van 't Hull - 2023
+        </footer>
+    </body>
+</html>

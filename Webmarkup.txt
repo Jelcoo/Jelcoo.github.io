@@ -1,1 +1,0 @@
-- Re-order items based on device type (article 1 first on pc, article 2 first on mobile)
