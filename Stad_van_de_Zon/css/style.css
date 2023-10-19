@@ -211,6 +211,42 @@ main img {
     grid-column: span 1 / span 1; /* span 1 column */
 }
 
+#recreatie {
+    display: grid;
+
+    @media screen and (max-width: 719px) {
+        grid-template-areas:
+            "voetbal"
+            "sportlagune"
+            "fg_live"
+            "skeef";
+    }
+    
+    @media screen and (min-width: 719px) {
+        grid-template-areas:
+            "skeef"
+            "fg_live"
+            "sportlagune"
+            "voetbal";
+    }
+}
+
+#skeef {
+    grid-area: skeef;
+}
+
+#fg_live {
+    grid-area: fg_live;
+}
+
+#sportlagune {
+    grid-area: sportlagune;
+}
+
+#voetbal {
+    grid-area: voetbal;
+}
+
 #img_home_random {
     grid-column: span 1 / span 1; /* span 1 column */
 }
