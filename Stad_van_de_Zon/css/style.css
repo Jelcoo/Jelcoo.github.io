@@ -257,6 +257,11 @@ main img {
     background-color: #FFC94D;
 }
 
+figcaption {
+    font-size: 14px;
+    color: #A6A7B0;
+}
+
 /*
  * Form
  */
