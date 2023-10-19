@@ -393,12 +393,12 @@ main a:active {
     box-sizing: border-box;
 }
 
-#contact > form label:not(label[for=aanhef_radio]) {
+#contact > form label:not(label[for*=aanhef_radio]), legend {
     font-weight: 700;
     font-size: 16px;
 }
 
-label[for=aanhef_radio] {
+label[for*=aanhef_radio] {
     display: block;
 }
 
