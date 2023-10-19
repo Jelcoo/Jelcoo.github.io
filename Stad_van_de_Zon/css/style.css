@@ -27,13 +27,17 @@ main {
     display: flex;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
+}
 
-    @media screen and (max-width: 719px) {
+@media screen and (max-width: 719px) {
+    #topnav {
         padding-top: 20px;
         padding-bottom: 20px;
     }
+}
 
-    @media screen and (min-width: 719px) {
+@media screen and (min-width: 719px) {
+    #topnav {
         height: 120px;
     }
 }
@@ -41,14 +45,18 @@ main {
 #topnav .logo {
     height: auto;
     display: block; /* display as block element, take up width of parent */
+}
 
-    @media screen and (max-width: 719px) {
+@media screen and (max-width: 719px) {
+    #topnav .logo {
         position: absolute;
         width: 100px;
         left: 32px;
     }
+}
 
-    @media screen and (min-width: 719px) {
+@media screen and (min-width: 719px) {
+    #topnav .logo {
         position: fixed;
         width: 200px;
         left: 64px;
@@ -60,16 +68,16 @@ main {
     height: auto;
 }
 
-#topnav .logo > img#logo_mobile {
-    /* hide image logo on desktop */
-    @media screen and (min-width: 719px) {
+/* hide image logo on desktop */
+@media screen and (min-width: 719px) {
+    #topnav .logo > img#logo_mobile {
         display: none;
     }
 }
 
-#topnav .logo > img#logo_pc {
-    /* hide text logo on mobile */
-    @media screen and (max-width: 719px) {
+/* hide text logo on mobile */
+@media screen and (max-width: 719px) {
+    #topnav .logo > img#logo_pc {
         display: none;
     }
 }
@@ -78,17 +86,21 @@ main {
     display: flex; /* display as flexbox */
     list-style: none; /* remove bullet points */
     justify-content: center; /* align horizontal */
+}
 
-    /* mobile navbar */
-    @media screen and (max-width: 719px) {
+/* mobile navbar */
+@media screen and (max-width: 719px) {
+    #topnav > ul {
         flex-wrap: wrap;
         margin-left: 125px;
         row-gap: 24px;
         column-gap: 10px;
     }
+}
 
-    /* pc navbar */
-    @media screen and (min-width: 719px) {
+/* pc navbar */
+@media screen and (min-width: 719px) {
+    #topnav > ul {
         align-items: center; /* align vertical */
         gap: 32px; /* space between elements */
     }
@@ -176,26 +188,32 @@ main {
  */
 main {
     margin-top: 24px;
+}
 
-    @media screen and (max-width: 719px) {
+@media screen and (max-width: 719px) {
+    main {
         padding-left: 8%;
         padding-right: 8%;
     }
-    
-    @media screen and (min-width: 719px) {
+}
+
+@media screen and (min-width: 719px) {
+    main {
         padding-left: 20%;
         padding-right: 20%;
     }
 }
 
-main#home {
-    @media screen and (max-width: 719px) {
+@media screen and (max-width: 719px) {
+    main#home {
         display: block;
     }
+}
 
-    @media screen and (min-width: 719px) {
+@media screen and (min-width: 719px) {
+    main#home {
         display: grid; /* display as grid */
-        grid: 50% 50%;
+        grid-template-columns: 50% 50%;
         grid-gap: 50px;
     }
 }
@@ -222,16 +240,20 @@ main img {
 
 #recreatie {
     display: grid;
+}
 
-    @media screen and (max-width: 719px) {
+@media screen and (max-width: 719px) {
+    #recreatie {
         grid-template-areas:
             "voetbal"
             "sportlagune"
             "fg_live"
             "skeef";
     }
-    
-    @media screen and (min-width: 719px) {
+}
+
+@media screen and (min-width: 719px) {
+    #recreatie {
         grid-template-areas:
             "skeef"
             "fg_live"
