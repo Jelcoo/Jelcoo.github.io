@@ -398,6 +398,13 @@ label[for=aanhef_radio] {
     color: #f00;
 }
 
+.cookies {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    z-index: 9999;
+}
+
 /*
  * Footer
  */
