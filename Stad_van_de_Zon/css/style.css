@@ -29,14 +29,14 @@ main {
     align-items: center; /* align vertical */
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 768px) {
     #topnav {
         padding-top: 20px;
         padding-bottom: 20px;
     }
 }
 
-@media screen and (min-width: 719px) {
+@media screen and (min-width: 768px) {
     #topnav {
         height: 120px;
     }
@@ -47,7 +47,7 @@ main {
     display: block; /* display as block element, take up width of parent */
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 768px) {
     #topnav .logo {
         position: absolute;
         width: 100px;
@@ -55,7 +55,7 @@ main {
     }
 }
 
-@media screen and (min-width: 719px) {
+@media screen and (min-width: 768px) {
     #topnav .logo {
         position: fixed;
         width: 200px;
@@ -69,14 +69,14 @@ main {
 }
 
 /* hide image logo on desktop */
-@media screen and (min-width: 719px) {
+@media screen and (min-width: 768px) {
     #topnav .logo > img#logo_mobile {
         display: none;
     }
 }
 
 /* hide text logo on mobile */
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 768px) {
     #topnav .logo > img#logo_pc {
         display: none;
     }
@@ -89,7 +89,7 @@ main {
 }
 
 /* mobile navbar */
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 768px) {
     #topnav > ul {
         flex-wrap: wrap;
         margin-left: 125px;
@@ -99,7 +99,7 @@ main {
 }
 
 /* pc navbar */
-@media screen and (min-width: 719px) {
+@media screen and (min-width: 768px) {
     #topnav > ul {
         align-items: center; /* align vertical */
         gap: 32px; /* space between elements */
@@ -190,27 +190,27 @@ main {
     margin-top: 24px;
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 768px) {
     main {
         padding-left: 8%;
         padding-right: 8%;
     }
 }
 
-@media screen and (min-width: 719px) {
+@media screen and (min-width: 768px) {
     main {
         padding-left: 20%;
         padding-right: 20%;
     }
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 768px) {
     main#home {
         display: block;
     }
 }
 
-@media screen and (min-width: 719px) {
+@media screen and (min-width: 768px) {
     main#home {
         display: grid; /* display as grid */
         grid-template-columns: 50% 50%;
@@ -242,7 +242,7 @@ main img {
     display: grid;
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 768px) {
     #recreatie {
         grid-template-areas:
             "voetbal"
@@ -252,7 +252,7 @@ main img {
     }
 }
 
-@media screen and (min-width: 719px) {
+@media screen and (min-width: 768px) {
     #recreatie {
         grid-template-areas:
             "skeef"
