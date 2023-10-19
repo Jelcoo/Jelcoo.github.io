@@ -49,25 +49,28 @@
         </nav>
         <main id="contact">
             <form action="#" method="POST">
-                <label for="aanhef">Aanhef <span class="required">*</span></label>
-                <label for="aanhef_radio">
-                    <input type="radio" name="aanhef" value="dhr" checked>
-                    De heer
-                </label>
-                <label for="aanhef_radio">
-                    <input type="radio" name="aanhef" value="mvr">
-                    Mevrouw
-                </label>
-                <label for="aanhef_radio">
-                    <input type="radio" name="aanhef" value="anders">
-                    Anders
-                </label>
+                <fieldset>
+                    <legend>Personalia</legend>
+                    <label for="aanhef">Aanhef <span class="required">*</span></label>
+                    <label for="aanhef_radio">
+                        <input type="radio" name="aanhef" value="dhr" checked>
+                        De heer
+                    </label>
+                    <label for="aanhef_radio">
+                        <input type="radio" name="aanhef" value="mvr">
+                        Mevrouw
+                    </label>
+                    <label for="aanhef_radio">
+                        <input type="radio" name="aanhef" value="anders">
+                        Anders
+                    </label>
 
-                <label for="naam">First name <span class="required">*</span></label>
-                <input type="text" id="naam" name="naam" placeholder="John Doe" required>
+                    <label for="naam">Naam <span class="required">*</span></label>
+                    <input type="text" id="naam" name="naam" placeholder="John Doe" required>
+                </fieldset>
 
                 <label for="email">E-mailadres <span class="required">*</span></label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" value="email" id="email" name="email" required>
 
                 <label for="telefoonnummer">Telefoonnummer</label>
                 <input type="tel" id="telefoonnummer" name="telefoonnummer">
@@ -75,7 +78,7 @@
                 <label for="bericht">Bericht <span class="required">*</span></label>
                 <textarea id="bericht" name="bericht" placeholder="Schrijf hier uw bericht" rows="5"></textarea>
 
-                <input type="submit" value="Versturen" />
+                <input type="submit" value="submit" />
 
                 <span class="required">
                     <em>* is required</em>

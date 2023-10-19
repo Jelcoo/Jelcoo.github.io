@@ -273,10 +273,10 @@ figcaption {
     padding-bottom: 50px;
 }
 
-#contact > form > input[type=text],
-#contact > form > input[type=email],
-#contact > form > input[type=tel],
-#contact > form > textarea {
+#contact > form input[type=text],
+#contact > form input[type=email],
+#contact > form input[type=tel],
+#contact > form textarea {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
@@ -289,7 +289,7 @@ figcaption {
     box-sizing: border-box;
 }
 
-#contact > form > label:not(label[for=aanhef_radio]) {
+#contact > form label:not(label[for=aanhef_radio]) {
     font-weight: 700;
     font-size: 16px;
 }
