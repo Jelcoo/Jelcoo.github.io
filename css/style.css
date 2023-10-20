@@ -232,10 +232,10 @@ main img {
 }
 
 #homearticle p {
-    line-height: 150%;
-    text-indent: -10px;
-    word-spacing: 3px;
-    letter-spacing: -1px;
+    line-height: 100%;
+    text-indent: 0%;
+    word-spacing: 100%;
+    letter-spacing: 100%;
 }
 
 #recreatie {
