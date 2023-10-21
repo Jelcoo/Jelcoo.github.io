@@ -1,5 +1,0 @@
-Student name: Jelco van 't Hull
-Student number: 710535
-Student class: INF1C
-GitHub Repository: https://github.com/Jelcoo/Jelcoo.github.io
-GitHub Pages URL: https://jelcoo.github.io/
