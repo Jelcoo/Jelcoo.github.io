@@ -313,7 +313,7 @@ main img {
 #cta-button {
     display: inline-block; /* format as inline element but with heigh and width changes */
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 0.5em;
     background-color: #FFAC00;
     padding: 10px;
     font-size: 20px;
